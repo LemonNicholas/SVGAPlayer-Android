@@ -18,7 +18,7 @@ object SVGACache {
         FILE
     }
 
-    private var type: Type = Type.DEFAULT
+    private var type: Type = Type.FILE
     private var cacheDir: String = "/"
         get() {
             if (field != "/") {
@@ -31,7 +31,7 @@ object SVGACache {
         }
 
     fun onCreate(context: Context?) {
-        onCreate(context, Type.DEFAULT)
+        onCreate(context, Type.FILE)
     }
 
     fun onCreate(context: Context?, type: Type) {
